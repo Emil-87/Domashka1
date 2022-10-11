@@ -1,20 +1,13 @@
-﻿// Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-
-// 4 -> да
-// -3 -> нет
-// 7 -> нет
-
-
-Console.WriteLine("Введите первое число");
+﻿Console.WriteLine("Введите число а:");
 int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число b");
+int b = Convert.ToInt32(Console.ReadLine());
 
-if(a % 2 == 0)
+if (a * a == b || b * b == a)
 {
-    Console.WriteLine( " ДА! четное");
+    Console.WriteLine("Yes Это число является квадратом другого");
 }
 else
 {
-    Console.WriteLine(" НЕТ!не четное");
+    Console.WriteLine("NO Ниодно число не является квадратом другого");
 }
-
-Console.WriteLine();
