@@ -1,16 +1,13 @@
-﻿// Задача 4.  Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+﻿Console.WriteLine("Ввидите число");
+int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите первое число");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите третье число");
-int c = Convert.ToInt32(Console.ReadLine());
-int max = a;
-if(a < b) max = b;
-if(b < c) max = c;
-Console.Write(max);
+if (n >= 99)
+{
+    Console.WriteLine((n / 100) %10);
+}
+else
+{
+    Console.WriteLine("Здесь нет третьей цифры");
+}
 
-// 2 3 7 -> 7
-// 44 5 78 -> 78
-// 22 3 9 -> 22
+
